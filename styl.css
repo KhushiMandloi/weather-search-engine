@@ -1,0 +1,81 @@
+
+
+.container {
+    height: 550px;
+    width: 400px;
+    background-image: url(images.jpg);
+    background-size: cover; /* Make sure the image covers the entire container */
+    background-position: center; /* Center the image horizontally and vertically */
+    position: absolute;
+    top: 055%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text horizontally */
+
+    /* Add white border with a width of 8px */
+    border: 8px solid palegreen;
+}
+
+.clock{
+    /* margin-top: 500px; */
+    margin-left: 900px;
+    height:118px;
+    width: 200px;
+    background-color: papayawhip;
+    display: inline; /* or display: inline-block; */
+    font-weight: bold;
+    font-size: 28px;
+    border: 8px solid palegreen;
+    border-radius: 25%;
+}
+
+/* city name */
+.name{
+    font-size: 25px;
+}
+
+.temperature {
+    /* margin-top: px; */
+    width: 50px;
+    font-size: 18px;
+    color: black; /* Text color */
+    display: flex; /* Display image and text in a row */
+    align-items: flex-start; /* Align elements at the start (top) */
+    justify-content: flex-start; /* Align elements at the start (left) */
+}
+
+.temperature img {
+    width: 60px; /* Set the image width as needed */
+    height: 60px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and text */
+    margin-left: 8px;
+}
+
+.large-temp {
+    font-size: 40px; /* Set the larger font size */
+      margin-top: -10px; 
+}
+
+.temp-unit {
+    font-size: 18px; /* Font size for the unit (e.g., °C) */
+}
+
+.humidity {
+    font-size: 22px;
+    color: black; /* Text color */
+     margin: 10px 0; Add spacing between elements */
+} 
+ .humidity{
+    margin-top: -5px;
+} 
+
+@media screen and (max-width: 700px) {
+    .container {
+        max-width: 100%; /* Allow the container to take the full width on small screens */
+    } 
+
+     .clock {
+        margin-left: 0; /* Center the clock horizontally on small screens */
+     }
+    }
